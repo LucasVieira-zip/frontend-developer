@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  background: linear-gradient(0deg, #1e1e1e, #262835);
+  color: white;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "Pokemon";
+  src: url("../public/fonts/pokemon-classic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}

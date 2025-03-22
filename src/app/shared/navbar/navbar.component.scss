@@ -1,0 +1,27 @@
+.parent {
+  display: flex;
+  background: linear-gradient(#030d4f, #ceecef); /* Gradiente de fundo */
+
+  height: auto; /* Ajustado para acomodar o conteúdo */
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  padding: 25px; /* Espaçamento interno */
+  border-radius: 0 0 20px 20px; /* Borda arredondada na parte inferior */
+  position: relative; /* Permite posicionar o conteúdo interno */
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column; /* Coloca as imagens em coluna */
+  align-items: center; /* Centraliza as imagens horizontalmente */
+  gap: 10px; /* Espaçamento entre as imagens */
+  width: auto; /* Ajusta conforme necessário */
+  height: auto; /* Ajusta conforme necessário */
+}
+
+.image-container img {
+  width: 250px; /* Ajuste conforme necessário */
+  height: auto; /* Mantém a proporção da imagem */
+}
+:hover .image-container img {
+  cursor: pointer; /* Altera o cursor ao passar o mouse */
+}

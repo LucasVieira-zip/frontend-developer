@@ -1,0 +1,7 @@
+<input
+  #searchBar
+  type="text"
+  placeholder="Buscar Pokemon..."
+  (keyup.enter)="inputValue.set(searchBar.value)"
+  (keyup)="inputValue.set(searchBar.value)"
+/>

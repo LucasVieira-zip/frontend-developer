@@ -1,0 +1,22 @@
+<div
+  class="parent-container"
+  [ngClass]="types()[0].type.name"
+  (click)="onClick()"
+>
+  <h1>{{ +number() | hashZeroFormat : 3 }}</h1>
+  <div class="img-container">
+    <img [src]="imgUrl()" [alt]="name()" />
+  </div>
+  <div>
+    <h1>{{ name() | titlecase }}</h1>
+    <div class="types-container">
+      <img
+        class="type"
+        *ngFor="let t of typeIcons()"
+        [src]="t"
+        alt="Type Icon"
+        class="type-icon"
+      />
+    </div>
+  </div>
+</div>

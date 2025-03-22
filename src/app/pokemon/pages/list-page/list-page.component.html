@@ -1,0 +1,12 @@
+<div class="searchbar-container">
+  <pokemon-searchbar (value)="onSearch($event)"></pokemon-searchbar>
+</div>
+<div class="pokemon-grid">
+  <pokemon-list-card
+    *ngFor="let p of filteredPokemon"
+    [imgUrl]="p.sprites.versions?.['generation-v']?.['black-white']?.animated?.front_default"
+    [name]="p.name"
+    [number]="p.id"
+    [types]="p.types"
+  />
+</div>

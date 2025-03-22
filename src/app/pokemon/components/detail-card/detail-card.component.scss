@@ -1,0 +1,80 @@
+@import "../../../../config-scss/rem-calc.scss";
+
+.parent-container {
+  display: flex;
+  flex-direction: column;
+  font-family: "Nunito", sans-serif;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: rem-calc(20);
+  max-width: rem-calc(600);
+  margin: auto;
+}
+
+.img-container img {
+  width: 100%;
+  max-width: rem-calc(500);
+  height: auto;
+}
+
+.info-container {
+  width: 100%;
+  max-width: rem-calc(500);
+  display: flex;
+  flex-direction: column;
+  gap: rem-calc(10);
+}
+
+.head-container {
+  display: flex;
+  align-items: center;
+  gap: rem-calc(10);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.types-container {
+  gap: rem-calc(10);
+  justify-content: center;
+}
+
+.types-container img {
+  width: rem-calc(60);
+  margin: 0 rem-calc(5);
+  object-fit: contain;
+}
+
+h1 {
+  font-size: rem-calc(36);
+  margin: rem-calc(5) 0;
+}
+
+h2 {
+  font-size: rem-calc(22);
+  margin: rem-calc(5) 0;
+}
+
+p {
+  font-size: rem-calc(18);
+  margin: rem-calc(5) 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: rem-calc(16);
+}
+
+caption {
+  text-align: center;
+  font-size: rem-calc(20);
+  font-weight: bold;
+}
+
+th,
+td {
+  border: rem-calc(5) solid #ddd;
+  padding: rem-calc(10);
+  text-align: center;
+}

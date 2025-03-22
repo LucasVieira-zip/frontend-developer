@@ -1,0 +1,21 @@
+.pokemon-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  grid-auto-rows: auto;
+  padding: 0px 10px;
+  max-width: 1200px;
+  margin: 10px auto;
+}
+
+.searchbar-container {
+  display: flex;
+  margin: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+pokemon-searchbar {
+  width: 100%;
+  max-width: 500px;
+}
